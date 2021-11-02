@@ -12,9 +12,10 @@ import {
   Archivo_400Regular,
   Archivo_500Medium,
   Archivo_600SemiBold,
+  Archivo_700Bold,
 } from '@expo-google-fonts/archivo'
 
-import { CarDetails } from './src/screens/CarDetails';
+import { Scheduling } from './src/screens/Scheduling';
 
 import theme from './src/styles/theme';
 
@@ -25,6 +26,7 @@ export default function App() {
     Archivo_400Regular,
     Archivo_500Medium,
     Archivo_600SemiBold,
+    Archivo_700Bold
   })
 
   if (!fontsLoaded) {
@@ -33,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <CarDetails />
+      <Scheduling />
     </ThemeProvider>
   )
 }
